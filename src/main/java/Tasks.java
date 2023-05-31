@@ -12,15 +12,15 @@ import java.util.*;
 public class Tasks {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList(); // Создание коллекции
-        for (int i = 0; i < 10; i++) { // Заполнение коллекции последовательностью чисел от 0 до 10
+        ArrayList<Integer> list = new ArrayList(); // коллекция
+        for (int i = 0; i < 10; i++) {
             list.add(i);
         }
 
-        Collections.shuffle(list); // организация произвольного порядка
+        Collections.shuffle(list); //  произв. порядок
 
         for (int i = 0; i < 10; i++) {
-            System.out.println(list.get(i) + " "); // Показываем что порядок произвольный
+            System.out.println(list.get(i) + " "); //
         }
 
         System.out.println("Минимальный элемент: " + Collections.min(list));
@@ -35,7 +35,7 @@ public class Tasks {
         ArrayList<Integer> alist = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) %2 != 0) {
+            if (list.get(i) %2 != 0) { //нечет
                 alist.add(list.get(i));
             }
         }
